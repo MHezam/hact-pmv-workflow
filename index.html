@@ -96,7 +96,7 @@
     </style>
 </head>
 <body class="p-4 sm:p-8">
-    <div class="max-w-2xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
+    <div class="max-w-sm mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
         <h1 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-8 sm:mb-12">
             HACT Programmatic Monitoring Visits Workflow
         </h1>
@@ -104,150 +104,116 @@
         <!-- Workflow Phases Grid -->
         <div class="workflow-grid grid grid-cols-1 gap-6 justify-items-center">
 
-            <!-- Step 1: Generation & Informing -->
+            <!-- Step 1: HACT-focused Status Dissemination (CO level) -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 1: Generation & Informing</div>
-                <p class="text-gray-600 mb-2">Generate and distribute the HACT PMV Requirements (segregated by section and Field Office); to PMOs & CO focal points.</p>
+                <div class="phase-title">Step 1: HACT-focused Status Dissemination (CO level)</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>MO prepares and distributes HACT PMV requirements.</li>
+                    <li>Distributes due monitoring action points.</li>
+                    <li>Disseminates key messages on patterns/quality.</li>
+                    <li>Targets relevant CO and Field Office focal points.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
                     <span class="role-tag">MO</span>
+                    <span class="role-tag">+PMO</span>
+                    <span class="role-tag">+FMfp</span>
+                    <span class="role-tag">(PMR oversight)</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: Monthly (end of month)</p>
-                <span class="output-tag">Output: Required PMV List</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: HACT Requirements shared.</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 3 (monthly cycle)</p>
+                <span class="output-tag">Output: Required PMV List, Action Points, and HACT Key Messages disseminated.</span>
             </div>
 
             <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
 
-            <!-- Step 2: Planning & Submitting -->
+            <!-- Step 2: Actions Closure & Field Visits Planning + Submitting Clearance Requests & Admin Work -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 2: Planning & Submitting</div>
-                <p class="text-gray-600 mb-2">Prioritise PMVs; prepare plans; submit for clearances; assign TPM for inaccessible areas.</p>
+                <div class="phase-title">Step 2: Actions Closure & Field Visits Planning + Submitting Clearance Requests & Admin Work</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>Close or reschedule due monitoring actions.</li>
+                    <li>Identify and plan FM visits (programme-focused) and assurance PMVs (partner-focused).</li>
+                    <li>Assign Monitoring Lead (ML).</li>
+                    <li>Prepare logistics, itineraries; assign Third-Party Monitors (TPM) if needed.</li>
+                    <li>ML submits clearance requests.</li>
+                    <li>ML adds detailed monitoring plans (dates, partners, monitors, questions, methods) to FMM per site.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
-                    <span class="role-tag">(with PMs/PMOs)</span>
+                    <span class="role-tag">Chief</span>
+                    <span class="role-tag">PO</span>
+                    <span class="role-tag">PMO/FMfp</span>
+                    <span class="role-tag">ML& Ms</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: 5 working days</p>
-                <span class="output-tag">Output: Scheduled PMV Plans</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Plans include sites, tentative dates, participant monitors, checklists.</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 5</p>
+                <span class="output-tag">Output: Pending actions closed/rescheduled; Monitoring Plan added to FMM; Cleared Itinerary Plan.</span>
             </div>
 
             <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
 
-            <!-- Step 3: Clearances & Rolling‑out Mission -->
+            <!-- Step 3: Field Mission & Data Collection, Reporting to FMM, Reviewing & Consolidating Report -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 3: Clearances & Rolling‑out Mission</div>
-                <p class="text-gray-600 mb-2">Obtain programme/admin/security clearances; confirm logistics; finalise itinerary; record go/no‑go.</p>
+                <div class="phase-title">Step 3: Field Mission & Data Collection, Reporting to FMM, Reviewing & Consolidating Report</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>ML and Ms conduct on-site verification (observation, discussions).</li>
+                    <li>Capture notes, findings, evidence; initiate on-spot actions.</li>
+                    <li>Ms enter findings (Likert/Options, notes, photos/docs) and agreed partner actions into FMM.</li>
+                    <li>ML reviews, consolidates, revises inputs, submits report for QA.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
+                    <span class="role-tag">ML</span>
+                    <span class="role-tag">+Ms</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: ≤5 working days</p>
-                <span class="output-tag">Output: Permitted Movement Plan & approvals</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Access approvals acquired.</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 5</p>
+                <span class="output-tag">Output: Monitors' inputs and evidence added to FMM; Reviewed, consolidated, and actionable MV Report submitted for QA.</span>
             </div>
 
             <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
 
-            <!-- Step 4: Data Collection -->
+            <!-- Step 4: QA Review -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 4: Data Collection</div>
-                <p class="text-gray-600 mb-2">Conduct on‑site verification at community/facility level; capture notes, checklists, findings evidence; initiate on‑spot actions.</p>
-                <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
-                    <span class="role-tag">PMs</span>
-                </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: ~2 working days (per mission)</p>
-                <span class="output-tag">Output: Fieldwork Notes & Checklists</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Evidence pack: notes, photos (time‑stamped), attendance, consent (as applicable).</p>
-            </div>
-
-            <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
-
-            <!-- Step 5: Reporting to FMM -->
-            <div class="workflow-card w-full">
-                <div class="phase-title">Step 5: Reporting to FMM</div>
-                <p class="text-gray-600 mb-2">Compile and enter collected data and findings; link evidence; reflect on‑spot & scheduled actions.</p>
-                <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
-                    <span class="role-tag">PMs</span>
-                </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: 2 working days</p>
-                <span class="output-tag">Output: Draft PMV data and records reflected in FMM</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Draft report submitted with attachments.</p>
-            </div>
-
-            <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
-
-            <!-- Step 6: Consolidating & Submitting -->
-            <div class="workflow-card w-full">
-                <div class="phase-title">Step 6: Consolidating & Submitting</div>
-                <p class="text-gray-600 mb-2">Review, consolidate, and submit for QA review.</p>
-                <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
-                </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: 1 working day</p>
-                <span class="output-tag">Output: PMV Actionable Report (Ready for QA)</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Status set to “Ready for QA.”</p>
-            </div>
-
-            <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
-
-            <!-- Step 7: QA Review -->
-            <div class="workflow-card w-full">
-                <div class="phase-title">Step 7: QA Review</div>
-                <p class="text-gray-600 mb-2">QA checklist (incl. review of methods, valid verification, and actionability).</p>
+                <div class="phase-title">Step 4: QA Review</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>Conduct cross-sectoral QA review.</li>
+                    <li>Use checklist: field methods, safeguarding, verifiability, actionability.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
                     <span class="role-tag">PMO</span>
                     <span class="role-tag">MO</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: 2 working days</p>
-                <span class="output-tag">Output: Reviewed PMV Report</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Outcome: “QA Passed” or “Revisions Required.”</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 2</p>
+                <span class="output-tag">Output: Reviewed PMV Report (QA Status: “Passed” or “Revisions Required”).</span>
             </div>
 
             <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
 
-            <!-- Step 8: Revision & Resubmission -->
+            <!-- Step 5: Revision & Resubmission -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 8: Revision & Resubmission</div>
-                <p class="text-gray-600 mb-2">Reflect QA reviews; revise report and actions; resubmit for QA confirmation.</p>
+                <div class="phase-title">Step 5: Revision & Resubmission</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>ML reflects QA reviews.</li>
+                    <li>Revises report and actions.</li>
+                    <li>Resubmits for QA confirmation.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PML</span>
-                    <span class="role-tag">PMs</span>
+                    <span class="role-tag">ML</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: 2 working days</p>
-                <span class="output-tag">Output: Revised & Quality‑Assured PMV Report</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Quality reports with owned actions & recorded due dates.</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 2</p>
+                <span class="output-tag">Output: Revised, Quality-Assured PMV Report; Recorded Action Ownership & Due Dates.</span>
             </div>
 
             <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
 
-            <!-- Step 9: Completion -->
+            <!-- Step 6: Completion -->
             <div class="workflow-card w-full">
-                <div class="phase-title">Step 9: Completion</div>
-                <p class="text-gray-600 mb-2">Mark QA‑passed report as Complete; notify recipients.</p>
+                <div class="phase-title">Step 6: Completion</div>
+                <ul class="list-disc list-inside text-gray-600 mb-2 ml-4">
+                    <li>PMO/MO marks MV as completed.</li>
+                    <li>System notifies ML & Ms.</li>
+                </ul>
                 <div class="flex flex-wrap items-center mb-2">
                     <span class="role-tag">PMO</span>
                     <span class="role-tag">MO</span>
                 </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: ≤2 working days</p>
-                <span class="output-tag">Output: Completed, Quality‑Assured Report</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: HACT Requirements Met</p>
-            </div>
-
-            <div class="arrow arrow-vertical"><span class="arrow-icon">↓</span></div>
-
-            <!-- Step 10: Action Closure + Data use, Analysis & Dissemination -->
-            <div class="workflow-card w-full">
-                <div class="phase-title">Step 10: Action Closure + Data use, Analysis & Dissemination</div>
-                <p class="text-gray-600 mb-2">Track action implementation; analyse trends; produce monitoring Snapshots & Key Messages; inform PMT/PCM/CMT.</p>
-                <div class="flex flex-wrap items-center mb-2">
-                    <span class="role-tag">PMR oversight</span>
-                    <span class="role-tag">PMO</span>
-                    <span class="role-tag">MO</span>
-                </div>
-                <p class="text-gray-500 text-sm mb-2">Timeframe: ~Semi‑annual</p>
-                <span class="output-tag">Output: Snapshots & Key Messages; Action‑closure tracker</span>
-                <p class="text-gray-500 text-xs mt-2">Notes: Monitoring informed and data used adaptation</p>
+                <p class="text-gray-500 text-sm mb-2">Timeframe: 2</p>
+                <span class="output-tag">Output: HACT / FM Requirements Met.</span>
             </div>
 
         </div>
